@@ -1,0 +1,10 @@
+add_executable(task_02_var5
+    main.cpp
+    ApplicationLogic.cpp
+    Simulation.cpp
+    StabilityAnalyzer.cpp
+    InputSignal.cpp
+    Model15.cpp
+    Model27.cpp
+    Model39.cpp
+)

@@ -1,0 +1,9 @@
+build/
+coverage_report/
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.vcxproj
+*.vcxproj.filters
+*.sln
