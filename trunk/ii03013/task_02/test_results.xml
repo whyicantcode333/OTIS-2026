@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="16" failures="0" disabled="0" errors="0" time="0.006" timestamp="2026-11-15T15:19:41.927" name="AllTests">
+  <testsuite name="StabilityAnalyzerTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-15T15:19:41.927">
+    <testcase name="StableCoefficientsReturnTrue" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="21" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.927" classname="StabilityAnalyzerTest" />
+    <testcase name="UnstableCoefficientsReturnFalseAndWarning" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="31" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.927" classname="StabilityAnalyzerTest" />
+    <testcase name="ZPlaneBoundaryValuesAreNotAsymptoticallyStable" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="41" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.928" classname="StabilityAnalyzerTest" />
+  </testsuite>
+  <testsuite name="ManualCalculationTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-15T15:19:41.928">
+    <testcase name="Model1_10_ExactSteps" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="58" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.928" classname="ManualCalculationTest" />
+    <testcase name="Model2_2_ExactSteps" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="75" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.928" classname="ManualCalculationTest" />
+    <testcase name="Model3_4_ExactSteps" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="86" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.929" classname="ManualCalculationTest" />
+  </testsuite>
+  <testsuite name="BoundaryValueTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-15T15:19:41.929">
+    <testcase name="Model2_2_SaturationThresholds" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="98" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.929" classname="BoundaryValueTest" />
+  </testsuite>
+  <testsuite name="PhysicsAndInvariantsTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-15T15:19:41.929">
+    <testcase name="ZeroInputAndZeroStateRemainAtRest" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="118" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.930" classname="PhysicsAndInvariantsTest" />
+    <testcase name="Model3_4_EulerMatchesAnalyticalSolution" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="136" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.930" classname="PhysicsAndInvariantsTest" />
+  </testsuite>
+  <testsuite name="ControlModesMockTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-15T15:19:41.930">
+    <testcase name="StepControlModeViaMock" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="197" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.930" classname="ControlModesMockTest" />
+    <testcase name="ImpulseControlModeViaMock" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="212" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.930" classname="ControlModesMockTest" />
+    <testcase name="HarmonicControlModeViaMock" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="227" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.931" classname="ControlModesMockTest" />
+  </testsuite>
+  <testsuite name="StandardSignalsAndExportTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-15T15:19:41.931">
+    <testcase name="SignalGeneratorsAndHtmlReport" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="245" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.931" classname="StandardSignalsAndExportTest" />
+  </testsuite>
+  <testsuite name="SteadyStateCases/LinearConvergenceTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-15T15:19:41.932">
+    <testcase name="ConvergesToTheoreticalSteadyState/0" value_param="40-byte object &lt;00-00 00-00 00-00 E0-3F 00-00 00-00 00-00 F0-3F 00-00 00-00 00-00 E0-3F 00-00 00-00 00-00 00-40 00-00 00-00 00-00 18-40&gt;" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="167" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.932" classname="SteadyStateCases/LinearConvergenceTest" />
+    <testcase name="ConvergesToTheoreticalSteadyState/1" value_param="40-byte object &lt;9A-99 99-99 99-99 C9-3F 9A-99 99-99 99-99 D9-3F 9A-99 99-99 99-99 D9-3F 00-00 00-00 00-00 F0-3F 00-00 00-00 00-00 F0-3F&gt;" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="167" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.932" classname="SteadyStateCases/LinearConvergenceTest" />
+    <testcase name="ConvergesToTheoreticalSteadyState/2" value_param="40-byte object &lt;00-00 00-00 00-00 E0-BF 00-00 00-00 00-00 F8-3F 00-00 00-00 00-00 00-00 00-00 00-00 00-00 08-40 00-00 00-00 00-00 08-40&gt;" file="C:\OTIS-2026\trunk\ii03013\task_02\test\test_models.cpp" line="167" status="run" result="completed" time="0." timestamp="2026-11-15T15:19:41.932" classname="SteadyStateCases/LinearConvergenceTest" />
+  </testsuite>
+</testsuites>

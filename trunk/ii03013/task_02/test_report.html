@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Google Test &amp; Coverage Report — task_02</title>
+<style>
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f172a; color: #e2e8f0; margin: 0; padding: 32px; }
+  .container { max-width: 1050px; margin: 0 auto; }
+  .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+  h1 { margin: 0; font-size: 26px; color: #38bdf8; }
+  .banner { padding: 8px 18px; border-radius: 999px; font-weight: 700; background: rgba(34,197,94,0.15); color: #22c55e; border: 1px solid #22c55e; }
+  .stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 24px; }
+  .stat-box { background: #1e293b; padding: 16px; border-radius: 12px; border: 1px solid #334155; text-align: center; }
+  .stat-val { font-size: 24px; font-weight: 700; color: #f8fafc; }
+  .stat-lbl { font-size: 12px; color: #94a3b8; margin-top: 4px; }
+  .card { background: #1e293b; border-radius: 14px; padding: 24px; margin-bottom: 24px; border: 1px solid #334155; }
+  h2 { margin-top: 0; font-size: 18px; color: #f8fafc; display: flex; justify-content: space-between; align-items: center; }
+  .sub-tag { font-size: 12px; font-weight: 500; color: #94a3b8; background: #0f172a; padding: 4px 10px; border-radius: 6px; border: 1px solid #334155; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { background: #0f172a; color: #94a3b8; text-align: left; padding: 12px; border-bottom: 2px solid #334155; }
+  th.num, td.num { text-align: center; font-variant-numeric: tabular-nums; }
+  th.center, td.center { text-align: center; }
+  td { padding: 10px 12px; border-bottom: 1px solid #334155; }
+  tr:hover { background: #263349; }
+  tr.total-row { background: #162032; border-top: 2px solid #475569; }
+  code { background: #0f172a; padding: 2px 7px; border-radius: 5px; color: #7dd3fc; font-family: Consolas, monospace; }
+  .badge-pass { background: rgba(34,197,94,0.18); color: #4ade80; padding: 3px 10px; border-radius: 6px; font-weight: 600; font-size: 12px; }
+  .badge-fail { background: rgba(239,68,68,0.18); color: #f87171; padding: 3px 10px; border-radius: 6px; font-weight: 600; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div>
+      <h1>Тестовое покрытие и результаты (Google Test &amp; Mock)</h1>
+      <div style="color:#94a3b8; font-size:13px; margin-top:4px;">Способ запуска: <code>run_tests.bat</code> | Сгенерировано: 2026-11-15 15:19:42</div>
+    </div>
+    <div class="banner">ALL TESTS PASSED</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat-box"><div class="stat-val">16</div><div class="stat-lbl">Всего тестов</div></div>
+    <div class="stat-box"><div class="stat-val" style="color:#4ade80;">16</div><div class="stat-lbl">Успешно</div></div>
+    <div class="stat-box"><div class="stat-val" style="color:#38bdf8;">н/д</div><div class="stat-lbl">Line Coverage</div></div>
+    <div class="stat-box"><div class="stat-val" style="color:#a78bfa;">н/д</div><div class="stat-lbl">Func Coverage</div></div>
+    <div class="stat-box"><div class="stat-val" style="color:#fbbf24;">0.006 с</div><div class="stat-lbl">Время</div></div>
+  </div>
+
+  <div class="card">
+    <h2>
+      <span>Покрытие модулей тестами</span>
+      <span class="sub-tag">Инструмент: нет данных</span>
+    </h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Модуль / Класс</th>
+          <th class="num">Покрытие строк (Line Coverage)</th>
+          <th class="num">Покрытие функций (Func Coverage)</th>
+          <th class="center">Статус</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan='4' class='center'>Данные покрытия не найдены. Установите gcovr и соберите проект компилятором GCC (MinGW) с флагом <code>--coverage</code>.</td></tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Детализация тестовых сценариев (16 / 16)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Набор тестов (Test Suite)</th>
+          <th>Тест (Test Case)</th>
+          <th class="center">Статус</th>
+          <th class="num">Время</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>StabilityAnalyzerTest</td><td>StableCoefficientsReturnTrue</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>StabilityAnalyzerTest</td><td>UnstableCoefficientsReturnFalseAndWarning</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>StabilityAnalyzerTest</td><td>ZPlaneBoundaryValuesAreNotAsymptoticallyStable</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>ManualCalculationTest</td><td>Model1_10_ExactSteps</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>ManualCalculationTest</td><td>Model2_2_ExactSteps</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>ManualCalculationTest</td><td>Model3_4_ExactSteps</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>BoundaryValueTest</td><td>Model2_2_SaturationThresholds</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>PhysicsAndInvariantsTest</td><td>ZeroInputAndZeroStateRemainAtRest</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>PhysicsAndInvariantsTest</td><td>Model3_4_EulerMatchesAnalyticalSolution</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>ControlModesMockTest</td><td>StepControlModeViaMock</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>ControlModesMockTest</td><td>ImpulseControlModeViaMock</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>ControlModesMockTest</td><td>HarmonicControlModeViaMock</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>StandardSignalsAndExportTest</td><td>SignalGeneratorsAndHtmlReport</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>SteadyStateCases/LinearConvergenceTest</td><td>ConvergesToTheoreticalSteadyState/0</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>SteadyStateCases/LinearConvergenceTest</td><td>ConvergesToTheoreticalSteadyState/1</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+<tr><td>SteadyStateCases/LinearConvergenceTest</td><td>ConvergesToTheoreticalSteadyState/2</td><td class='center'><span class="badge-pass">PASSED</span></td><td class='num'>0. с</td></tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>
