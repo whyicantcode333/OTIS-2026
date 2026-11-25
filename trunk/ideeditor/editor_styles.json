@@ -1,0 +1,70 @@
+{
+  "ui_skin": "LiquidGlass",
+  "font_family": "ZedCascadia",
+  "font_size": 16,
+  "background_rgb": [
+    255,
+    255,
+    255
+  ],
+  "gutter_bg_rgb": [
+    241,
+    245,
+    249
+  ],
+  "gutter_fg_rgb": [
+    71,
+    85,
+    105
+  ],
+  "token_rules": [
+    {
+      "rgb": [
+        30,
+        41,
+        59
+      ],
+      "weight": "Regular"
+    },
+    {
+      "rgb": [
+        124,
+        58,
+        237
+      ],
+      "weight": "Bold"
+    },
+    {
+      "rgb": [
+        3,
+        105,
+        161
+      ],
+      "weight": "Bold"
+    },
+    {
+      "rgb": [
+        21,
+        128,
+        61
+      ],
+      "weight": "Regular"
+    },
+    {
+      "rgb": [
+        194,
+        65,
+        12
+      ],
+      "weight": "Regular"
+    },
+    {
+      "rgb": [
+        100,
+        116,
+        139
+      ],
+      "weight": "Italic"
+    }
+  ]
+}

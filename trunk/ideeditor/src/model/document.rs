@@ -19,6 +19,8 @@ pub struct Document {
     pub cursor_pos: i32,
     /// Есть ли несохранённые изменения (для отображения символа `*`)
     pub is_dirty: bool,
+    /// Монотонно растущий номер ревизии текста (для фильтрации устаревших ответов фонового лексера)
+    pub revision: u64,
     /// Кодировка документа
     pub encoding: &'static str,
 }
@@ -34,6 +36,7 @@ impl Document {
             current_content: String::new(),
             cursor_pos: 0,
             is_dirty: false,
+            revision: 0,
             encoding: "UTF-8",
         }
     }
@@ -59,6 +62,7 @@ impl Document {
             current_content: content,
             cursor_pos: 0,
             is_dirty: false,
+            revision: 0,
             encoding: "UTF-8",
         })
     }
@@ -69,8 +73,9 @@ impl Document {
         self.file_path.is_none() && !self.is_dirty && self.current_content.is_empty()
     }
 
-    /// Обновляет текст документа и пересчитывает флаг несохранённых изменений (`is_dirty`).
+    /// Обновляет текст документа, увеличивает номер ревизии и пересчитывает флаг `is_dirty`.
     pub fn update_text(&mut self, new_text: String) {
+        self.revision = self.revision.wrapping_add(1);
         self.is_dirty = new_text != self.saved_content;
         self.current_content = new_text;
     }
